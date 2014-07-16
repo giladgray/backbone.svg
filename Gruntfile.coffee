@@ -48,7 +48,7 @@ module.exports = (grunt, options) ->
         files: ['app/templates/**/*.hbs']
         tasks: ['handlebars']
       sass:
-        files: ['app/scripts/**/*.s{a,c}ss']
+        files: ['app/styles/**/*.{sass,scss}']
         tasks: ['sass'] #, 'autoprefixer']
       livereload:
         options:

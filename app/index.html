@@ -4,19 +4,37 @@
     <title>Backbone.SVG</title>
 
     <!-- build:css styles/index.css -->
+    <link href="bower_components/prismjs/prism-okaidia.css" rel="stylesheet" type="text/css">
     <link href="styles/index.css" rel="stylesheet" type="text/css">
     <!-- endbuild -->
 
     <!-- JavaScript and HTML must be in separate files for security. -->
   </head>
   <body>
-    <div class="container"></div>
+    <div class="container language-javascript">
+      <h1>backbone.svg.js</h1>
+      <pre>
+        <code>
+          CircleView = Backbone.View.extend(Backbone.SVG, {
+            tagName: 'circle'
+          })
+
+          new CircleView({
+            cx : 50
+            cy : 50
+            r  : 30
+          })
+        </code>
+      </pre>
+    </div>
 
     <!-- build:js scripts/vendor.js -->
     <script src="bower_components/jquery/dist/jquery.js"></script>
     <script src="bower_components/lodash/dist/lodash.js"></script>
     <script src="bower_components/backbone/backbone.js"></script>
     <script src="bower_components/handlebars/handlebars.runtime.js"></script>
+    <script src="bower_components/prismjs/prism.js"></script>
+    <script src="bower_components/prismjs/components/prism-javascript.js"></script>
     <!-- endbuild -->
 
     <script src="scripts/templates.js"></script>
