@@ -1,8 +1,8 @@
 {
-  "name": "MMINDD",
+  "name": "backbone.svg",
   "version": "0.0.0",
-  "description": "multiminding on your new tabs",
-  "main": "index.js",
+  "description": "create SVG Views",
+  "main": "dist/backbone.svg.js",
   "devDependencies": {
     "coffeeify": "^0.6.0",
     "grunt": "~0.4.4",
