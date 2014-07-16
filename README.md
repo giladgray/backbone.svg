@@ -1,5 +1,5 @@
-MMINDD MMVP
-===========
+backbone.svg.js
+===============
 
 This app can be used as both a static website and a Chrome extension. It generates an index.html and a handful of JavaScript and CSS files for the website and a `manifest.json` for the Chrome extension. The extension replaces your browser's "new tab" page with the static website.
 
@@ -23,10 +23,3 @@ This app can be used as both a static website and a Chrome extension. It generat
 
 ### Common Workflow
 Generally, you'll run `grunt dev` (or simply `grunt` for convenience) while you develop. This command launches the development server which watches for changes to source files and recompiles and reloads intelligently.
-
-When you're ready to deploy a new version, you'll run `grunt dist` to test the compiled code. This command launches a preview server so you can interact with the compiled code. It does not watch for changes so any fixes will likely require some more `grunt dev`. Once you are satisfied with your updates, you can run `grunt deploy` to upload the contents of the `dist/` directory to the GitHub Page.
-
-## Chrome Extension
-This MVP is designed to be distributed initially as a packaged Chrome extension on the Chrome Web Store. During development, the app can be installed in Chrome on your machine by running `grunt dist` to compile the code and then following [these instructions to add the unpacked extension to Chrome](https://developer.chrome.com/extensions/getstarted#unpacked).
-
-If you add the `dist/` directory to Chrome as an unpacked extension then Chrome will actually pick up changes as you make them! However, beware that the output of the `grunt build` task still references a few files outside of `dist/` so the app will not work correctly as an extension. Only a full `grunt dist` produces a valid, functioning extension.
